@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course selling</title>
+    <link rel="stylesheet" href="task1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div id="main">
+
+    <!------------------------- NAVBAR -------------------------------------------->
+
+        <div class="navbar">
+            <div class="logo"><h1>LOGO</h1></div>
+            <div class="navbar1">
+                <h4><a href="#home">Home</a></h4>
+                <h4><a href="#about">About</a></h4>
+                <h4><a href="#course">Courses</a></h4>
+                <h4><a href="#contact">Contact</a></h4>
+            </div>
+
+            <div class="icons">
+                <a href=""><i class='bx bx-user'></i></a>
+                <a href=""><i class='bx bx-heart' ></i></a>
+                <a href=""><i class='bx bx-cart' ></i></a>
+                <div class="menu"><i class='bx bx-menu' onclick="showsidebar()"></i></div>
+            </div>
+        </div>
+        <div class="navbar2">
+        <div class="navbar22">
+                <i class='bx bx-window-close' onclick="closesidebar()"></i>
+                <h1>LOGO</h1>
+                <div class="hideline"></div>
+                <h4><a href="#home">Home</a></h4>
+                <h4><a href="#about">About</a></h4>
+                <h4><a href="#course">Courses</a></h4>
+                <h4><a href="#contact">Contact</a></h4>
+                <div class="social">
+                    <h4 class="s">Social Media: </h4>
+                    <h4><a href="#home">Facebook</a></h4>
+                    <h4><a href="#about">Instagram</a></h4>
+                    <h4><a href="#course">Twitter</a></h4>
+                    <h4><a href="#contact">LinkedIn</a></h4>
+                </div>
+                <div class="social">
+                    <h4 class="s">Loaction: </h4>
+                    <h4><a href="#">Mumbai, Maharashtra</a></h4>
+                    <h4><a href="#">INDIA</a></h4>
+                </div>
+                <div class="social">
+                    <h4 class="s">E-mail: </h4>
+                    <h4><a href="#">Techpelament@example.com</a></h4>
+                </div>
+        </div>
+        </div>
+        
+
+    <!------------------------- LANDING PAGE -------------------------------------------->
+        
+        <div class="landingpage">
+            <div class="heading">
+                <h1>We Make</h1>
+                <div class="anime">
+                    <img src="images/coding.jfif" style="size: 300%;">
+                    <h1>Coding Easy</h1>
+                </div>
+                <h1>To Learn</h1>
+            </div>
+            <div class="line"></div>
+            <div class="bottom">
+                <h4>Coding is Fun</h4>
+                <h4>Learn With Us</h4>
+                <div class="btnarrow">
+                    <button class="headbtn">Start</button>
+                    <div class="arrow"><i class='bx bx-up-arrow-alt' ></i></div>
+                </div>
+            </div>
+        </div>
+        
+
+    <!------------------------- ABOUT -------------------------------------------->
+        <div class="line"></div>
+
+        <div id="#about" class="about-main">
+            <div class="about1">
+                <div class="left">
+                    <img src="images/aboutcoding.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h1>ABOUT US</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate qui natus quas. Quasi odio ex quod delectus qui harum dicta tempore tenetur ea fugit sint, asperiores labore perspiciatis molestiae distinctio voluptas! Voluptas nulla debitis excepturi, minus magnam illum, itaque animi qui distinctio, harum ipsa?</p>
+                    <div class="hello1">
+                        <button>Read More</button>
+                        <div class="hello2"><i class='bx bx-up-arrow-alt' ></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line" style="margin-top: -1px"></div>
+
+
+    <!------------------------- CATEGORIES -------------------------------------------->
+
+        <div class="categories">
+            <div class="categories1">
+                <h5>Categories</h5>
+                <h2>Popular Categories</h2>
+            </div>
+
+            <div class="content">
+                <div class="cate-content">
+                    <img src="data:image/png;base64,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" alt="">
+                    <h3>Angular</h3>
+                    <p>3 Courses</p>
+                </div>
+
+                <div class="cate-content">
+                    <img  src="https://play-lh.googleusercontent.com/GhQVJ0wdeWzNz1k5jlb8mKNAY4qLgoF0MB8m_Oxor9KSYmq-Q4ShP43I8HLL01BVRIGT" alt="">
+                    <h3>Node.js</h3>
+                    <p>3 Courses</p>
+                </div>
+
+                <div class="cate-content">
+                    <img src="https://pbs.twimg.com/profile_images/1785867863191932928/EpOqfO6d_400x400.png" alt="">
+                    <h3>React.js</h3>
+                    <p>3 Courses</p>
+                </div>
+
+                <div class="cate-content">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <h3>Docker</h3>
+                    <p>3 Courses</p>
+                </div>
+
+                <div class="cate-btn">
+                    <button class="btn2">All Categories</button>    
+                </div>
+            </div>
+        </div>
+        <div class="line" style="margin-top: -1px;"></div>
+
+
+    <!------------------------- COURSE -------------------------------------------->
+
+        <div class="course">
+            <div class="hello">
+                <div class="course-cate">
+                    <h2>Explore Courses</h2>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="row">
+                    <div class="card">
+                        <div class="co-img">
+                            <img src="images/course.jfif" style="width: 300px ; height: 190px;" alt="">
+                        </div>
+                        <div>
+                            <h3>Rs.2000</h3>
+                            <h2>Web Development</h2>
+                            <h4>Learn in 1 Month</h4>
+                            <div class="review">
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star-half' ></i></a>
+                            </div>
+                            <div>
+                                <h4>{ 10 Reviews}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="images/datastruct.jpeg" style="width: 300px ; height: 190px;">
+                        <div>
+                            <h3>Rs.6000</h3>
+                            <h2>Data Structure & alogrithm</h2>
+                            <h4>Learn in 6 Month</h4>
+                            <div class="review">
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star-half' ></i></a>
+                            </div>
+                            <div>
+                                <h4>{ 10 Reviews}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="images/react.jfif" style="width: 300px ; height: 190px;" alt="">
+                        <div>
+                            <h3>Rs.2000</h3>
+                            <h2>Reactjs</h2>
+                            <h4>Learn in 1 Month</h4>
+                            <div class="review">
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star-half' ></i></a>
+                            </div>
+                            <div>
+                                <h4>{ 10 Reviews}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="images/node.jfif" style="width: 300px ; height: 190px;"alt="">
+                        <div>
+                            <h3>Rs.2000</h3>
+                            <h2>Nodejs</h2>
+                            <h4>Learn in 1 Month</h4>
+                            <div class="review">
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star-half' ></i></a>
+                            </div>
+                            <div>
+                                <h4>{ 10 Reviews}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="images/docker.jfif" style="width: 300px ; height: 190px;" alt="">
+                        <div>
+                            <h3>Rs.2000</h3>
+                            <h2>Docker</h2>
+                            <h4>Learn in 1 Month</h4>
+                            <div class="review">
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star-half' ></i></a>
+                            </div>
+                            <div>
+                                <h4>{ 10 Reviews}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card">
+                        <img src="images/angular.jpg" style="width: 300px ; height: 190px;" alt="">
+                        <div>
+                            <h3>Rs.2000</h3>
+                            <h2>Angular</h2>
+                            <h4>Learn in 1 Month</h4>
+                            <div class="review">
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star' ></i></a>
+                                <a href=""><i class='bx bxs-star-half' ></i></a>
+                            </div>
+                            <div>
+                                <h4>{ 10 Reviews}</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coursebtn">
+                    <button class="coursebtn1">More Colums</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    <!------------------------- TRUSTED -------------------------------------------->
+        <div class="line"></div>
+        <div class="trusted">
+            <div class="trust">
+                <div class="trust-text">
+                    <h5>Trusted by</h5>
+                    <h2>100+ Leading Universities and Companies</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/amity.png" alt="">
+                <img src="images/acomp.avif" alt="">
+                <img src="images/bcompany.jpg" alt="">
+                <img src="images/ccompan.png" alt="">
+            </div>
+        </div>
+        <div class="line" style="margin-top: -1px;"></div>
+
+    <!------------------------ FOOTER -------------------------------------------->
+
+        <div class="footer">
+            <div class="footer2">
+                <div class="left1">
+                    <h1>CODING-MADE EASY</h1>
+                    <h1 class="leftlearn">TO LEARN</h1>
+                </div>
+                <div class="right1">
+                    <h1 class="rightlearn">TO LEARN</h1>
+                    <div class="line3"></div>
+                    <div class="social1">
+                        <h4>Social Media: </h4>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div class="social2">
+                        <div>
+                            <h4>Loaction:</h4>
+                            <a href="#">Mumbai, Maharashtra <br> India.</a>
+                        </div>
+                        <div class="footernav">
+                            <h4>Navbar:</h4>
+                            <a href="#home">Home</a>
+                            <a href="#course">Course</a>
+                            <a href="#about">About</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    <div class="social1" style="margin-top: -2px;">
+                        <h4 class="email2">E-mail: </h4>
+                        <a href="#">Techpelament@example.com</a>
+                    </div>
+                    <h1 class="footlogo" style="font-size: 50px;">LOGO</h1>
+                    <div class="copyright">@copyright Sachin's Design 2024</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+    <!------------------------- JAVASCRIPT -------------------------------------------->
+    
+    
+    <script type="text/javascript">
+    	function showsidebar(){
+    		const sidebar = document.querySelector('.navbar2');
+    		sidebar.style.display = 'flex';
+    	}
+    	function closesidebar(){
+    		const hide = document.querySelector('.navbar2');
+    		hide.style.display = 'none';
+    	}
+    </script>
+
+</body>
+</html>
